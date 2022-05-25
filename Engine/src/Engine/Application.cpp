@@ -1,3 +1,5 @@
+#include "egpch.h"
+
 #include "Application.h"
 
 #include "Engine/Events/ApplicationEvent.h"
