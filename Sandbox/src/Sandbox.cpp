@@ -12,12 +12,17 @@ public:
 
 	void OnUpdate() override
 	{
-		EG_INFO("ExampleLayer::Update");
+		if (Engine::Input::IsKeyPressed(EG_KEY_TAB)) {
+			EG_TRACE("Tab key is pressed");
+		}
 	}
 
 	void OnEvent(Engine::Event& event) override
 	{
-		EG_TRACE("{0}", event);
+		if (event.GetEventType() == Engine::EventType::KeyPressed) {
+			Engine::KeyPressedEvent& e = (Engine::KeyPressedEvent&)event;
+			EG_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 };
 

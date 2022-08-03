@@ -63,6 +63,10 @@
     </ClInclude>
     <ClInclude Include="src\Window.h" />
     <ClInclude Include="src\egpch.h" />
+    <ClInclude Include="src\Engine\Input.h" />
+    <ClInclude Include="src\Engine\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Engine\KeyCodes.h" />
+    <ClInclude Include="src\Engine\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Engine\Application.cpp">
@@ -87,5 +91,6 @@
       <Filter>Engine\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\egpch.cpp" />
+    <ClCompile Include="src\Engine\Platform\Windows\WindowsInput.cpp" />
   </ItemGroup>
 </Project>
