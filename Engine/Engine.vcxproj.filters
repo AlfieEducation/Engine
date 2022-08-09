@@ -16,9 +16,6 @@
     <Filter Include="src\Engine\Platform">
       <UniqueIdentifier>{A63124B0-1293-01BE-9B00-48700761387D}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Engine\Platform\OpenGL">
-      <UniqueIdentifier>{1AC46F4E-06D4-1B1F-6F8D-803D5BBC0AB8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\Engine\Platform\Windows">
       <UniqueIdentifier>{E0218474-4C2F-B25A-D515-AE4541227E11}</UniqueIdentifier>
     </Filter>
@@ -89,9 +86,6 @@
     </ClInclude>
     <ClInclude Include="src\Engine\MouseButtonCodes.h">
       <Filter>src\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Engine\Platform\OpenGL\ImGuiOpenGLRenderer.h">
-      <Filter>src\Engine\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Engine\Platform\Windows\WindowsInput.h">
       <Filter>src\Engine\Platform\Windows</Filter>
@@ -1355,6 +1349,9 @@
     <ClCompile Include="src\Engine\Application.cpp">
       <Filter>src\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="src\Engine\ImGui\ImGuiBuild.cpp">
+      <Filter>src\Engine\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Engine\ImGui\ImGuiLayer.cpp">
       <Filter>src\Engine\ImGui</Filter>
     </ClCompile>
@@ -1366,9 +1363,6 @@
     </ClCompile>
     <ClCompile Include="src\Engine\Log.cpp">
       <Filter>src\Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Engine\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
-      <Filter>src\Engine\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Engine\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Engine\Platform\Windows</Filter>
